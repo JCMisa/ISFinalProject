@@ -1,0 +1,72 @@
+﻿@model ISFinalProject.Models.Barangay;
+
+<form method="post" asp-action="Create" class="form">
+    <p class="title">Citizen Information </p>
+    <p class="message">All civil information that you provided are private. </p>
+    <div class="flex">
+        <label>
+            <input type="text" class="input" asp-for="FirstName">
+            <span>Firstname</span>
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </label>
+
+        <label>
+            <input type="text" class="input" asp-for="LastName">
+            <span>Lastname</span>
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </label>
+    </div>
+
+    <label>
+        <span>Age</span>
+        <input type="number" class="input" asp-for="Age">
+        <span asp-validation-for="Age" class="text-danger"></span>
+    </label>
+
+    <label>
+        <input type="text" class="input" asp-for="Gender">
+        <span>Gender</span>
+        <span asp-validation-for="Gender" class="text-danger"></span>
+    </label>
+
+    <label>
+        <input type="text" class="input" asp-for="CivilStatus">
+        <span>Civil Status</span>
+        <span asp-validation-for="CivilStatus" class="text-danger"></span>
+    </label>
+
+    <label>
+        <span>House No.</span>
+        <input type="number" class="input" asp-for="HouseNo">
+        <span asp-validation-for="HouseNo" class="text-danger"></span>
+    </label>
+
+    <label>
+        <input type="text" class="input" asp-for="Occupation">
+        <span>Occupation</span>
+        <span asp-validation-for="Occupation" class="text-danger"></span>
+    </label>
+
+    <label>
+        <span>Annual Income</span>
+        <input type="number" class="input" asp-for="annualIncome">
+        <span asp-validation-for="annualIncome" class="text-danger"></span>
+    </label>
+
+    <p class="title">Citizen Contacts </p>
+    <p class="message">All citizen contacts that you provided are private. </p>
+
+    <label>
+        <input type="text" class="input" asp-for="ContactNo">
+        <span>Contact No.</span>
+        <span asp-validation-for="ContactNo" class="text-danger"></span>
+    </label>
+
+    <label>
+        <input type="email" class="input" asp-for="Gmail" placeholder="bsinfo2b@gmail.com">
+        <span>Gmail</span>
+        <span asp-validation-for="Gmail" class="text-danger"></span>
+    </label>
+
+    <button type="submit" class="submit"> <i class="bi bi-plus-circle"></i> Submit</button>
+</form>

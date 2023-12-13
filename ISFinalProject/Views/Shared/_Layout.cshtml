@@ -1,0 +1,68 @@
+﻿@* <!DOCTYPE html>
+<html lang="en"> *@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ISFinalProject</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ISFinalProject.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+</head>
+
+
+<HEADER>	
+	<DIV CLASS="LOGO">
+		<A asp-area="" asp-controller="Home" asp-action="Index"> <img src="@Url.Content("~/images/logo.png")" alt="logo" width="50PX" height="50PX" /> </A>
+	</DIV>
+
+	@* <H1 CLASS="BIS"> BARANGAY INFORMATION SYSTEM </H1>
+	<H6 CLASS="FPII"> FINAL PROJECT IN ITEC205 </H6> *@
+		
+	<DIV class="NAVIGATORS">
+		<UL class="MAIN-NAV">
+			<LI CLASS="HOME"> <A asp-area="" asp-controller="Home" asp-action="Index">HOME</A></LI>
+			<LI CLASS="CIMFA"><A asp-area="" asp-controller="Brgy" asp-action="Index">MANAGE</A></LI>
+			<LI CLASS="ACT"><A asp-area="" asp-controller="Home" asp-action="Privacy">PRIVACY</A></LI>
+		</UL>
+	</DIV>			
+</HEADER>
+
+<body>
+	<div CLASS="LSPU"><img src="@Url.Content("~/images/LSPU.png")" alt="lspuLogo"/> </div>
+
+	<div CLASS="CCS"><img src="@Url.Content("~/images/CCS.png")" alt="ccsLogo" WIDTH="100PX"/> </div>
+		
+	@* <DIV class="slide-up1">
+		<BR><BR><BR><P>CLARK DAVID CATLE</P>
+	</DIV>
+		
+	<DIV class="slide-up2">
+		<BR><BR><BR><P>IAN THEODORE MALOLES</P>
+	</DIV>
+		
+	<DIV class="slide-up3">
+		<BR><BR><BR><P>JOHN CARLO MISA</P>
+	</DIV>
+		
+	<DIV class="slide-up4">
+		<BR><BR><BR><P>LAWRENCE BAUSTISTA</P>
+	</DIV>
+		
+	<DIV class="slide-up5">
+		<BR><BR><BR><P>PRINCE DARRELL MASA</P>
+	</DIV> *@
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

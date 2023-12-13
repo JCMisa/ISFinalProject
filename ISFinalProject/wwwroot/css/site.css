@@ -1,0 +1,337 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    left: 600px;
+}
+
+.title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+}
+
+.title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+}
+
+.title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+}
+
+.message,
+.signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+}
+
+.signin {
+    text-align: center;
+}
+
+.signin a {
+    color: royalblue;
+}
+
+.signin a:hover {
+    text-decoration: underline royalblue;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label .input:valid + span {
+    color: grey;
+}
+
+.submit {
+border: none;
+outline: none;
+background-color: royalblue;
+padding: 10px;
+border-radius: 10px;
+color: #fff;
+font-size: 16px;
+transform: .3s ease;
+}
+
+.submit:hover {
+    background-color: rgb(56, 90, 194);
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+HEADER{
+    background-color: gray;
+    height: 10%;
+    background-size: cover;
+}
+
+.LOGO {
+    position: absolute;
+    top: 7PX;
+    left: 30PX;
+}
+
+BODY {
+    BACKGROUND-IMAGE: linear-gradient(rgba(0,0,0,5),rgba(0,0,0,0.1)),url('../images/Brgy_home_page.jpg');
+    BACKGROUND-SIZE: COVER
+}
+
+.MAIN-NAV {
+    FLOAT: LEFT;
+    LIST-STYLE: NONE;
+    MARGIN-LEFT: 100PX;
+    MARGIN-TOP: 80PX;
+}
+
+    .MAIN-NAV LI {
+        DISPLAY: INLINE-BLOCK;
+    }
+
+div.NAVIGATORS {
+    POSITION: ABSOLUTE;
+    BOTTOM: 94%;
+}
+
+.MAIN-NAV LI A {
+    COLOR: WHITE;
+    TEXT-DECORATION: NONE;
+    PADDING: 5PX 40PX;
+    FONT-FAMILY: CAMBRIA;
+    TRANSITION: .4S EASE-IN-OUT;
+}
+
+.MAIN-NAV LI.HOME A {
+    COLOR: YELLOW
+}
+
+UL A:HOVER {
+    COLOR: YELLOW
+}
+
+H6.FPII {
+    COLOR: #DCDCDC;
+    POSITION: ABSOLUTE;
+    LEFT: 40%;
+    TOP: 30%;
+    FONT-SIZE: 20PX
+}
+
+H1.BIS {
+    COLOR: WHITE;
+    POSITION: ABSOLUTE;
+    LEFT: 30%;
+    TOP: 20%
+}
+
+DIV.LSPU {
+    POSITION: ABSOLUTE;
+    LEFT: 130PX;
+    TOP: 100PX
+}
+
+DIV.CCS {
+    POSITION: ABSOLUTE;
+    right: 130PX;
+    TOP: 104PX
+}
+
+
+
+@keyframes slideUp {
+    from {
+        transform: translateY(135%);
+    }
+
+    to {
+        transform: translateY(5%);
+    }
+}
+
+.slide-up1 {
+    FONT-SIZE: 30PX;
+    TEXT-SHADOW: 0PX 0PX 0PX BLACK, 6PX 8PX 2PX #57472d;
+    COLOR: #FFE4B5;
+    POSITION: ABSOLUTE;
+    LEFT: 50PX;
+    TOP: 50%;
+    animation-name: slideUp;
+    animation-duration: 10s; /* Adjust the duration as needed */
+    animation-timing-function: ease-out; /* Adjust the timing function as needed */
+    animation-fill-mode: both; /* This ensures that the element stays in the final state after the animation */
+}
+
+.slide-up2 {
+    FONT-SIZE: 30PX;
+    TEXT-SHADOW: 0PX 0PX 0PX BLACK, 6PX 8PX 2PX #57472d;
+    COLOR: #FFE4B5;
+    POSITION: ABSOLUTE;
+    LEFT: 37%;
+    TOP: 50%;
+    animation-name: slideUp;
+    animation-duration: 10s; /* Adjust the duration as needed */
+    animation-timing-function: ease-out; /* Adjust the timing function as needed */
+    animation-fill-mode: both; /* This ensures that the element stays in the final state after the animation */
+}
+
+.slide-up3 {
+    FONT-SIZE: 30PX;
+    TEXT-SHADOW: 0PX 0PX 0PX BLACK, 6PX 8PX 2PX #57472d;
+    COLOR: #FFE4B5;
+    POSITION: ABSOLUTE;
+    LEFT: 75%;
+    TOP: 50%;
+    animation-name: slideUp;
+    animation-duration: 10s; /* Adjust the duration as needed */
+    animation-timing-function: ease-out; /* Adjust the timing function as needed */
+    animation-fill-mode: both; /* This ensures that the element stays in the final state after the animation */
+}
+
+.slide-up4 {
+    FONT-SIZE: 30PX;
+    TEXT-SHADOW: 0PX 0PX 0PX BLACK, 6PX 8PX 2PX #57472d;
+    COLOR: #FFE4B5;
+    POSITION: ABSOLUTE;
+    LEFT: 10%;
+    TOP: 60%;
+    animation-name: slideUp;
+    animation-duration: 10s; /* Adjust the duration as needed */
+    animation-timing-function: ease-out; /* Adjust the timing function as needed */
+    animation-fill-mode: both; /* This ensures that the element stays in the final state after the animation */
+}
+
+.slide-up5 {
+    FONT-SIZE: 30PX;
+    TEXT-SHADOW: 0PX 0PX 0PX BLACK, 6PX 8PX 2PX #57472d;
+    COLOR: #FFE4B5;
+    POSITION: ABSOLUTE;
+    LEFT: 60%;
+    TOP: 60%;
+    animation-name: slideUp;
+    animation-duration: 10s; /* Adjust the duration as needed */
+    animation-timing-function: ease-out; /* Adjust the timing function as needed */
+    animation-fill-mode: both; /* This ensures that the element stays in the final state after the animation */
+}
+
+.MAIN-NAV LI.PRIVACY A {
+    COLOR: YELLOW
+}
+
+UL A:HOVER {
+    COLOR: YELLOW
+}
+		
+	 
+	 
